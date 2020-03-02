@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,700&display=swap");
+
+body {
+  font-family: "Poppins";
+  background-color: #3f51b5;
+}
+
+#todo {
+  width: 60%;
+  height: 100vh;
+  margin: 3rem auto;
+}
+
+#todo__input {
+  width: 100%;
+  height: 5.5rem;
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 700;
+  background-color: #002984;
+  border: none;
+  padding: 0 2rem;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+#todo__input:focus {
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1);
+  border: none;
+}
+
+#todo__input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#todo__task {
+  width: 100%;
+  margin-top: 5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #fff;
+}
+
+#todo__title {
+  color: #fff;
+  font-size: 1.4em;
+  letter-spacing: -0.01em;
+}
+
+#todo__list {
+  margin-top: 1.5rem;
+}
+
+.todo__list-item {
+  width: 100%;
+  vertical-align: middle;
+  background-color: #eee;
+  padding: 1rem 1.2rem;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.todo__list-item > input {
+  margin-right: 0.8rem;
+}
+
+.task-complete {
+  text-decoration: line-through;
+  opacity: 0.5;
+  font-style: italic;
+}
